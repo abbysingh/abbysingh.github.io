@@ -1,30 +1,42 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text);
 
 html {
-    display: table;
-    margin: auto;
+
 }
 
 body {
-    display: flex;
-    vertical-align: middle;
-    flex-direction: column;
-    align-items: stretch;
     font-size: 100%;
 }
 
+.avatar{
+  text-align: center;
+}
+
+.avatar img{
+  height: 300px;
+  border-radius: 150px;
+}
+
+@media (max-width:400px) {
+  .avatar img{
+    height: 150px;
+    border-radius: 75px;
+    margin: 30px;
+  }
+}
+
 .title{
-	margin-top: 100px;
 	font-size: 3.5em;
 	width: 100%;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
 	color: #242424;
+  margin-bottom: 40px;
 }
 
 .subtitle{
-	max-width: 80%;
     padding: 0px 40px 10px 40px;
     text-align: center;
     margin: auto;
@@ -34,14 +46,107 @@ body {
     line-height: 1.5em;
 }
 
+.subtitle a{
+    color: #4A90E2;
+    text-decoration: none;
+}
+@media (min-width:992px) {
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+}
+
+.arrow{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wynk{
+  background-color: #E43D3D;
+}
+
+.pipal{
+  background-color: #32C245;
+}
+
+.hush{
+  background-color: #69509E;
+}
+
+.deviceholder{
+  padding: 30px;
+}
+
+.deviceholder-landscape{
+  max-width: 65%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.app-description{
+  color: white;
+}
+
+.center{
+  text-align: center;
+}
+
+.app-description a{
+  text-decoration-style: none;
+  color: white;
+  font-weight: 400;
+}
+
+.app-title{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  margin: 30px;
+}
+
+.app-subtext{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  margin:30px;
+  font-weight: 300;
+}
+
+.download-app{
+  margin: 30px;
+}
+
+.download-app img{
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.download-app img:hover{
+  background-color: rgba(54, 54, 54, 0.2);
+}
+
+.githubimg img{
+  height: 65px;
+}
+
 @media (min-width: 1100px){
     .subtitle{
         max-width: 60%;
     }
 }
 
+@media (max-width: 400px) {
+    .subtitle{
+      font-size: 1.3em;
+    }
+    .deviceholder-landscape{
+      max-width: 90%;
+    }
+}
+
 .footer{
-    margin-top: 30px;
     width: 100%;
     text-align: center;
 }
@@ -49,7 +154,7 @@ body {
 .footer p{
     font-family: 'Crimson Text', serif;
     color: #535353;
-    font-size: 1.3em;
+    font-size: 2.5em;
 }
 
 .footer ul{
@@ -68,37 +173,11 @@ body {
 }
 
 .footer li img{
-    padding: 5px;
-    width: 20px;
-    height: 20px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .footer li:hover{
     background: #EEE;
-}
-
-.rotate-left{
-    -webkit-animation-name: rotateleft;
-    -webkit-animation-duration: 3000ms;
-    -webkit-animation-iteration-count: 2; /* The magic keyword for infinite*/
-    -webkit-animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes rotateleft {
-    0% { -webkit-transform: rotateY(0deg); }
-    50% { -webkit-transform: rotateY(-180deg); }
-    100% { -webkit-transform: rotateY(0); }
-}
-
-.rotate-right{
-    -webkit-animation-name: rotateright;
-    -webkit-animation-duration: 3000ms;
-    -webkit-animation-iteration-count: 2; /* The magic keyword for infinite*/
-    -webkit-animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes rotateright {
-    0% { -webkit-transform: rotateY(0deg); }
-    50% { -webkit-transform: rotateY(180deg); }
-    100% { -webkit-transform: rotateY(0); }
 }
