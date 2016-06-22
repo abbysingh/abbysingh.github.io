@@ -36,6 +36,12 @@
 			$('#fullpage').fullpage({
 				autoScrolling: !isMobile.any()
 			});
+			if(isMobile.any()){
+				var allVideos = $('video');
+				for(var i=0; i<allVideos.length; i++){
+					allVideos[i].autoplay = false; 
+				}
+			}
 		});
 	</script>
 </head>
@@ -49,10 +55,8 @@
 				</div>
 				<h1 class="title animated fadeIn">Abheyraj Singh</h1>
 				<p class="subtitle animated fadeInUp">I am an iOS Developer and Interaction Designer based out of New Delhi. I am a skateboarder and musician in my free time. I am also fond of twiddling my thumbs on a Dualshock 4 Controller.</p>
-				<p class="subtitle animated fadeInUp">I started working at <a href="http://www.codecube.in">Codecube.in</a> on apps for clients accross iOS, Android and the Web. I later moved on to <a href="http://www.bsb.in">BSB</a> and developed Wynk Music, one of the most popular music apps in India
-					with over 5 Million downloads. Check it out <a href="https://itunes.apple.com/in/app/wynk-music-hindi-english-songs/id845083955?mt=8">here</a> I&#39;m currently working at <a href="http://www.housing.com">Housing.com</a> as an iOS Developer and Interaction
-					Designer
-				</p>
+				<p class="subtitle animated fadeInUp">I'm currently working on <a href="http://lisn.xyz">Lisn</a>, a realtime collaborative music sharing app. I have been working at <a href="http://www.housing.com">Housing.com</a> as an Interaction Designer for the past year. Before that I worked at BSB where I developed <a href="http://www.airtel.in/wynkmusic">Wynk Music</a></p>
+				<p class="subtitle animated fadeInUp">I'm currently available for part time work. Get in touch with me at abheyrajsingh@gmail.com</p>
 				<div class = "arrow">
 					<img class = "animated fadeInDown infinite" src="assets/triangle.svg"/>
 				</div>

@@ -14,7 +14,7 @@ body {
 }
 
 .avatar img{
-  height: 300px;
+  height: 260px;
   border-radius: 150px;
 }
 
@@ -42,7 +42,7 @@ body {
     margin: auto;
     font-family: 'Crimson Text', serif;
     color: #535353;
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.5em;
 }
 
@@ -121,6 +121,7 @@ body {
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
+  width: 150px;
 }
 
 .download-app img:hover{
@@ -141,8 +142,23 @@ body {
     .subtitle{
       font-size: 1.3em;
     }
+    .deviceholder{
+      max-width: 90%;
+    }
     .deviceholder-landscape{
       max-width: 90%;
+    }
+    .title{
+      font-size: 2.5em;
+    }
+    .app-title{
+      font-size: 2.5em;
+    }
+    .app-subtext{
+      font-size: 1.4em;
+    }
+    .arrow{
+      margin-bottom: 30px;
     }
 }
 
