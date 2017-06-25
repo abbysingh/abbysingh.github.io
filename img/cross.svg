@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#08DB1F" offset="0%"></stop>
+            <stop stop-color="#0ABF17" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="30" cy="30" r="30"></circle>
+        <filter x="-61.7%" y="-58.3%" width="223.3%" height="223.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.200124547 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-9" transform="translate(-1307.000000, -29.000000)">
+            <g id="Group-3" transform="translate(1330.000000, 50.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <path d="M30.4705627,29.4705627 L30.4705627,18.4705627 L30.4705627,17.9705627 L29.4705627,17.9705627 L29.4705627,18.4705627 L29.4705627,29.4705627 L18.4705627,29.4705627 L17.9705627,29.4705627 L17.9705627,30.4705627 L18.4705627,30.4705627 L29.4705627,30.4705627 L29.4705627,41.4705627 L29.4705627,41.9705627 L30.4705627,41.9705627 L30.4705627,41.4705627 L30.4705627,30.4705627 L41.4705627,30.4705627 L41.9705627,30.4705627 L41.9705627,29.4705627 L41.4705627,29.4705627 L30.4705627,29.4705627 Z" id="Combined-Shape" stroke="#000000" stroke-width="2" stroke-linecap="round" transform="translate(29.970563, 29.970563) rotate(45.000000) translate(-29.970563, -29.970563) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
