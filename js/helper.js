@@ -23,6 +23,14 @@ function showProjectDetails(projectName) {
     
 }
 
+function contactClicked(){
+    $('.content-section').animatescroll();
+}
+
+function workClicked(){
+    $('.about').animatescroll();
+}
+
 $(document).ready(function() {
     var isMobile = {
 			    Android: function() {
