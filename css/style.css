@@ -519,7 +519,7 @@ h5{
 
 
 
-@media (min-width: 320px) and (max-width:767px){
+@media (min-width: 320px) and (max-width:1024px){
     
 .cover{
     background-image: url(../img/mobile-cover.png);
