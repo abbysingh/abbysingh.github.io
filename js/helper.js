@@ -24,11 +24,11 @@ function showProjectDetails(projectName) {
 }
 
 function contactClicked(){
-    $('.content-section').animatescroll();
+    $('.about').animatescroll();
 }
 
 function workClicked(){
-    $('.about').animatescroll();
+    $('.content-section').animatescroll();
 }
 
 $(document).ready(function() {
