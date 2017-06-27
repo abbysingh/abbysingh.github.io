@@ -201,6 +201,10 @@ h5{
     color: #F83618;
 }
 
+.housing .view-case:hover{
+    color: #3324AE;
+}
+
 .project-blurb{
     padding: 24px 32px 24px 32px;
     font-family: Campton, sans-serif;
