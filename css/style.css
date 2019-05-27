@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Spectral');
+
 
 @font-face{
     font-family: Campton;
@@ -47,29 +46,30 @@ section {
 
 .cover-text{
     position: absolute;
-    text-align: center;
+    text-align: left;
     font-family: Campton, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
     bottom: 40%;
     width: 50%;
     left: 25%;
-    font-size: 24px;
+    font-size: 44px;
+}
+
+.green{
+    color: #08DB1F;
 }
 
 .top-left-indicator{
-    padding: 16px 32px 16px 32px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #08DB1F;
-    border: 1px solid #08DB1F;
     position: absolute;
-    top: 60px;
-    left: 60px;
-    text-align: center;
+    font-family: Campton, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #08DB1F;
+    top: 80px;
+    left: 80px;
+    text-align: left;
     letter-spacing: 1.5px;
-    line-height: 30px;
 }
 
 h5{
@@ -282,6 +282,10 @@ h5{
     margin-bottom: 60px;
 }
 
+.omio-cover{
+    background-image: url(../img/omio/omio-cover.png);
+}
+
 .lisn-cover{
     background-image: url(../img/lisn-cover.jpg);
 }
@@ -421,6 +425,7 @@ h5{
 }
 
 .email{
+    font-family: Campton, sans-serif;
     font-size: 20px;
     color: white;
     text-align: center;
