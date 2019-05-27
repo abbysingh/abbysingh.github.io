@@ -173,6 +173,10 @@ h5{
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
+.omio .view-case:hover{
+    color: #FA6B6B;
+}
+
 .lisn{
 /*    background-color: #F5A623;*/
 }
@@ -298,6 +302,10 @@ h5{
     background-image: url(../img/housing-cover.jpg);
 }
 
+.omio .project-tile-image{
+    background-image: url(../img/omio-tile.png);
+}
+
 .wynk .project-tile-image{
     background-image: url(../img/wynk-tile.png);
 }
@@ -347,20 +355,37 @@ h5{
 }
 
 .text-container h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Campton', sans-serif;
+    font-weight: 600;
     padding-bottom: 40px;
 }
 
 .text-container h2{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Campton', sans-serif;
+    font-weight: 600;
     padding-bottom: 24px;
     color: #333;
+    font-size: 2.2rem;
+}
+
+.text-container h3{
+    font-family: 'Campton', sans-serif;
+    font-weight: 600;
+    padding-bottom: 18px;
+    color: #333;
+    font-size: 1.6rem;
 }
 
 .text-container p{
     font-size: 18px;
     line-height: 32px;
     color: #333333;
+}
+
+.text-container .project-bullets{
+    font-size: 18px;
+    -webkit-padding-start: 16px;
+    color: #333;
 }
 
 .text-container iframe{
@@ -385,6 +410,14 @@ h5{
     margin-top: 60px;
     margin-bottom: 60px;
     box-shadow: 0px 2px 40px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.text-container .narrow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
 }
 
 .email{
