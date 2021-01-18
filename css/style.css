@@ -1,27 +1,6 @@
 
-
-@font-face{
-    font-family: Campton;
-    src: url('../font/Campton.Bold.otf') format("opentype");
-    font-weight: bold;
-}
-
-@font-face{
-    font-family: Campton;
-    src: url('../font/Campton.Medium.otf') format("opentype");
-    font-weight: 500;
-}
-
-@font-face{
-    font-family: Campton;
-    src: url('../font/Campton.Book.otf') format("opentype");
-}
-
-@font-face{
-    font-family: Campton;
-    src: url('../font/Campton.Light.otf') format("opentype");
-    font-weight: 200;
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 html {
 
@@ -29,54 +8,136 @@ html {
 
 body {
     font-size: 14px;
-    font-family: Campton, sans-serif;
-    background-color: #01092D;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
 }
 
 section {
-    min-height: 100vh;
     position: relative;
 }
 
-.cover{
-    background-image: url(../img/cover.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.container{
+    width: 1024px;
+    margin: 0 auto;
 }
 
-.cover-text{
-    position: absolute;
-    text-align: left;
-    font-family: Campton, sans-serif;
-    font-weight: 600;
-    color: white;
-    bottom: 40%;
-    width: 50%;
-    left: 25%;
-    font-size: 44px;
+.intro{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
 }
 
-.green{
-    color: #08DB1F;
+.intro-photo{
+    width: 200px;
+    height: 200px;
+    background: url('../img/Avatar.png');
+    border-radius: 100px;
+    background-size: contain;
+    flex-shrink: 0;
 }
 
-.top-left-indicator{
-    position: absolute;
-    font-family: Campton, sans-serif;
-    font-weight: 600;
+.intro-text-stack{
+    display:flex;
+    padding-left: 48px;
+    flex-direction: column;
+}
+
+.emoji {
+  font-size: 44px;
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg); }
+   10% { transform: rotate(-12.0deg); }
+   20% { transform: rotate( 12.0deg); }
+   30% { transform: rotate(-8.0deg); }
+   40% { transform: rotate(  8.0deg); }
+   50% { transform: rotate(  0.0deg); }
+  100% { transform: rotate(  0.0deg); }
+}
+
+.intro-text{
     font-size: 32px;
-    color: #08DB1F;
-    top: 80px;
-    left: 80px;
-    text-align: left;
-    letter-spacing: 1.5px;
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    line-height: 120%;
+    color: black;
 }
 
-h5{
-    font-family: Campton;
-    font-weight: bold;
-    font-size: 24px;
+.work{
+    padding-top: 200px;
 }
+
+h2{
+    font-size: 32px;
+    font-family: 'Libre Baskerville';
+    font-weight: bold;
+}
+
+h3{
+    font-size: 24px;
+    font-family: 'Libre Baskerville';
+    font-weight: bold;
+}
+
+.work-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-item{
+    margin-top: 32px;
+    width: calc(50% - 16px);
+    min-height: 600px;
+    padding: 24px;
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+
+.work-item h3{
+    margin-top: 24px;
+}
+
+.work-item p{
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 70%;
+}
+
+.project-preview-image{
+    display: block;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.sennder-image{
+    background-image: url('../img/Sennder-preview.png');
+}
+
+.omio-1-image{
+    background-image: url('../img/Omio-preview-1.png');
+}
+
+.gradient-sennder{
+    background: linear-gradient(180deg, #FFDEBC 0%, #FF8300 100%);
+}
+
+.gradient-omio-1{
+    background: linear-gradient(180deg, #BFD3EB 0%, #5E90CC 100%);
+}
+
+.gradient-omio-2{
+    background: linear-gradient(180deg, #FEDADA 0%, #FB8989 100%);
+}
+
 
 .about-text{
     padding: 40px;
@@ -94,23 +155,6 @@ h5{
     padding-top: 200px;
     padding-bottom: 100px;
     margin-left: 60px;
-}
-
-.hamburger{
-    position: fixed;
-    top: 60px;
-    right: 60px;
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    background-image: url(../img/hamburger.svg);
-    transition: transform 0.3s ease-out;
-    z-index: 10000;
-}
-
-.hamburger:hover{
-    background-image: url(../img/hamburger-filled.svg);
-    transform: scale(1.1);
 }
 
 .top-links{
