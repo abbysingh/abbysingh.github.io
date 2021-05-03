@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+html {
+
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    margin: 0;
+}
+
+section {
+    position: relative;
+}
+
+.container{
+    height:100vh;
+    display: inline-flex;
+    align-content: center;
+    overflow-x: auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 32px;
+    font-family: 'Libre Baskerville';
+    font-weight: bold;
+}
+
+h3{
+    font-size: 24px;
+    font-family: 'Libre Baskerville';
+    font-weight: bold;
+}
+
+.work{
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30vw;
+    padding: 24px;
+    margin: 0 0 0 24px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.work-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

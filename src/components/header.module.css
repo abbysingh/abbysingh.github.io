@@ -1,0 +1,51 @@
+.intro{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 30vw;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.introPhoto{
+    width: 200px;
+    height: 200px;
+    background: url('../../img/Avatar.png');
+    border-radius: 100px;
+    background-size: contain;
+    flex-shrink: 0;
+}
+
+.introTextStack{
+    display:flex;
+    flex-direction: column;
+}
+
+.emoji {
+  font-size: 44px;
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg); }
+   10% { transform: rotate(-12.0deg); }
+   20% { transform: rotate( 12.0deg); }
+   30% { transform: rotate(-8.0deg); }
+   40% { transform: rotate(  8.0deg); }
+   50% { transform: rotate(  0.0deg); }
+  100% { transform: rotate(  0.0deg); }
+}
+
+.introText{
+    font-size: 32px;
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    line-height: 120%;
+    color: black;
+}
