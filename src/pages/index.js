@@ -18,7 +18,13 @@ export const pageQuery = graphql`
             gradient
             isComplete
             subtitle
-            
+            featuredImage{
+              childImageSharp {
+                fluid(maxWidth: 800, fit: CONTAIN) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
