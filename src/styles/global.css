@@ -38,6 +38,13 @@ h3{
     margin: 0px;
 }
 
+h6{
+    font-size: 18px;
+    font-family: 'Libre Baskerville';
+    margin-top: 32px;
+    margin-bottom: 16px;    
+}
+
 .cardSizing{
     height: 100%;
     width: 30vw;
@@ -86,4 +93,85 @@ h3{
     letter-spacing: 2px;
     font-weight: bold;
     font-size: 14px;
+}
+
+.blog-post-border{
+    padding: 16px;
+    min-height: 100vh;
+}
+
+.blog-post-container{
+    background: white;
+    min-height: 90vh;
+    border-radius: 16px;
+}
+
+.blog-post-header{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 32px;
+    max-width: 960px;
+    align-items: stretch;
+}
+
+
+.blog-post-header h1{
+    font-size: 32px;
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    line-height: 120%;
+    color: black;
+}
+
+.blog-post-header-image{
+    width: 300px;
+    min-height: 400px;
+}
+
+.blog-post-header-text-container{
+    padding: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-post-subtitle{
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0.7;
+    margin:0;
+}
+
+.blog-post-content{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 0px;
+}
+
+.blog-post-content p{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.backButton{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 44px;
+    height:44px;
+    border-radius: 22px;
+    border: 1px solid #f1f1f1;
+    top:32px;
+    left:32px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725);
+    background: white;
+}
+
+.backButton img{
+    width: 24px;
+}
+
+.backButton:hover{
+    background: #f1f1f1;
 }

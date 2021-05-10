@@ -10,7 +10,7 @@ module.exports = {
     'gatsby-plugin-image',
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    'gatsby-transformer-remark',
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
@@ -27,8 +27,8 @@ module.exports = {
       },
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'markdown-pages',
-        path: `${__dirname}/src/markdown-pages`,
+        name: 'pages',
+        path: `${__dirname}/src/pages`,
       }
     }
   ],

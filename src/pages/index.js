@@ -4,9 +4,10 @@ import Header from "../components/header"
 import PostLink from "../components/post-link"
 
 
+
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
@@ -33,7 +34,7 @@ export const pageQuery = graphql`
 `
 
 export default function Home({data: {
-  allMarkdownRemark: { edges },
+  allMdx: { edges },
 }}) 
 {
   
