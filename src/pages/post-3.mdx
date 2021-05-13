@@ -6,7 +6,10 @@ isComplete: "true"
 subtitle: "Senior Product Designer, Omio 2018"
 gradient: "linear-gradient(180deg, #FEDADA 0%, #FB8989 100%)"
 featuredImage: "omio-search-snapshot.png"
+images: [omio-before.png, omio-2.png]
 ---
+
+
 
 One of the most important things in finding the right trip for our users is how the results are displayed when they perform a search on our product. When I joined the company we were in the process of user testing our search results page. At the same time there was a parallel initiative to make our website completely responsive. This meant taking the mobile design system and scaling it up to the desktop. 
 
@@ -15,6 +18,16 @@ At Omio, our users were having trouble searching because a) Our search results h
 
 ###### What the design looked like before I started
 The design I started working with had the following problems, 
-1. There was no way to tell if the price was for one-way or for round trip
-2. The number of changes in a trip were unclear
-3. Our users said that the information on the screen was too dense and hard to read.
+- There was no way to tell if the price was for one-way or for round trip
+- The number of changes in a trip were unclear
+- Our users said that the information on the screen was too dense and hard to read.
+
+<div className = "blog-content-image-container">
+<img src={props.images[0].publicURL} className="blog-content-image" />
+</div>
+
+I started exploring different options based on this feedback from our users. I tried adding a label that explains the price, I improved the tap affordance for the ‘changes’ button. All of this while also figuring out a responsive systematic structure for the cell. Ranging from our smallest supported screen size of 320px all the way up to 1920px on desktop. 
+
+<div className = "blog-content-image-container">
+	<img src={props.images[1].publicURL} className="blog-content-image" />
+</div>

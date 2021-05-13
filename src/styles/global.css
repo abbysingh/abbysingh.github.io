@@ -154,6 +154,32 @@ h6{
     line-height: 27px;
 }
 
+.blog-post-content ul{
+    list-style-type: none;
+}
+
+.blog-post-content li{
+    font-size: 18px;
+    line-height: 36px;
+    padding-left: 1rem;
+    text-indent: -0.7rem;
+}
+
+.blog-post-content li::before {
+    content: "🍉   ";
+}
+
+.blog-content-image-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 32px auto;
+}
+
+.blog-content-image{
+    max-height: 600px;
+}
+
 .backButton{
     position: fixed;
     display: flex;

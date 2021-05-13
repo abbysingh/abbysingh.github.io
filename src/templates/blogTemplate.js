@@ -26,7 +26,7 @@ export default function Template({
         <div
           className="blog-post-content"
           // dangerouslySetInnerHTML={{ __html: html }}
-        ><MDXRenderer>{body}</MDXRenderer></div>
+        ><MDXRenderer images={data.mdx.frontmatter.images}>{body}</MDXRenderer></div>
       </div>
     </div>
   )
@@ -42,6 +42,9 @@ export const pageQuery = graphql`
         title
         subtitle
         gradient
+        images{
+          publicURL
+        }
         featuredImage{
           childImageSharp {
             fluid(maxWidth: 800, fit: CONTAIN) {
