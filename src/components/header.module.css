@@ -35,6 +35,16 @@
   display: inline-block;
 }
 
+.intro p{
+  font-size: 18px;
+  font-family: 'Libre Baskerville';
+  font-weight: normal;
+  line-height: 140%;
+  color: black;
+  margin-top: 24px;
+  text-align: center;
+}
+
 @keyframes wave-animation {
     0% { transform: rotate(  0.0deg); }
    10% { transform: rotate(-12.0deg); }
@@ -53,4 +63,14 @@
     color: black;
     margin-top: 24px;
     text-align: center;
+}
+
+@media (max-width: 767px) { 
+  
+  .intro{
+      height: 100%;
+      width: 85vw;
+      min-width: 250px;
+  }
+  
 }

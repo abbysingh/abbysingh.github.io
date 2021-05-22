@@ -46,6 +46,18 @@ export default function Home({data: {
     <div className="container">
       <Header/>
       {Posts}
+      <div className="bwCard cardSizing">
+      <h1>Additionally,</h1>
+      <p>Since 2020, I've been mentoring budding product designers at the <a href="https://www.10kdesigners.com" target="_blank" rel="noopener noreferrer">10k Designers Masterclass</a></p>
+      <p>In 2017, I worked at <a href="https://lazyeight.in" target="_blank" rel="noopener noreferrer">lazyeight.in</a></p>
+      <p>In 2015, I designed and developed a prototype app in both iOS and Android for housing.com. Take a <a href="https://gfycat.com/kindopendegu" target="_blank" rel="noopener noreferrer">peek here</a></p>
+      <p>In 2014, I was one of the initial iOS developers for <a href="https://apps.apple.com/in/app/wynk-music-songs-podcasts/id845083955" target="_blank" rel="noopener noreferrer">Wynk Music</a>, helping it scale from zero to one million users</p>
+      </div>
+      <div className="bwCard cardSizing">
+        <h1>🎧🗣</h1>
+        <p>In 2020, I did a podcast interview with <a href="https://www.youtube.com/watch?v=-QMc0acKX7Q" target="_blank" rel="noopener noreferrer">Whiteboard FM</a></p>
+        <p>Back in 2018, I talked to my friend and ex-cofounder at Lisn, Abhinav Chikkara about <a href="https://www.youtube.com/watch?v=agXAcxQvAxI" target="_blank" rel="noopener noreferrer">my journey into product design</a></p>
+      </div>
     </div>
   ) 
 }

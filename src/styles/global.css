@@ -1,6 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) { 
+    
+    .container{
+        padding: 16px;
+    }
+    
+    .cardSizing{
+        height: 100%;
+        width: 85vw;
+        min-width: 250px;
+    }
+    
+    .work{
+        margin: 0 0 0 16px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .featuredImage{
+        margin: 4vh;
+    }
+}
+
 html {
 
 }
@@ -38,6 +73,13 @@ h3{
     margin: 0px;
 }
 
+h4{
+    font-size: 22px;
+    font-family: 'Libre Baskerville';
+    margin-top: 44px;
+    margin-bottom: 24px; 
+}
+
 h6{
     font-size: 18px;
     font-family: 'Libre Baskerville';
@@ -49,6 +91,42 @@ h6{
     height: 100%;
     width: 30vw;
     min-width: 400px;
+}
+
+.bwCard{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+    margin: 0 0 0 24px;
+}
+
+.bwCard h1{
+    font-size: 32px;
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    line-height: 120%;
+    color: black;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.bwCard p{
+    font-size: 18px;
+    font-family: 'Libre Baskerville';
+    font-weight: normal;
+    line-height: 140%;
+    color: black;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.bwCard a{
+    color: #78789B;
 }
 
 .work{
@@ -126,6 +204,7 @@ h6{
 .blog-post-header-image{
     width: 300px;
     min-height: 400px;
+    max-height: 500px;
 }
 
 .blog-post-header-text-container{
@@ -151,7 +230,7 @@ h6{
 
 .blog-post-content p{
     font-size: 18px;
-    line-height: 27px;
+    line-height: 30px;
 }
 
 .blog-post-content ul{
@@ -166,7 +245,7 @@ h6{
 }
 
 .blog-post-content li::before {
-    content: "🍉   ";
+    content: "👉   ";
 }
 
 .blog-content-image-container{
@@ -178,6 +257,24 @@ h6{
 
 .blog-content-image{
     max-height: 600px;
+}
+
+.blog-content-video{
+    border-radius: 16px;
+    border: 1px solid #f1f1f1;
+    margin: 32px auto;
+}
+
+.blog-post-content a{
+    color: #78789B;
+}
+
+.image-caption{
+    font-size: 14px !important;
+    color: #000000;
+    opacity: 0.75;
+    text-align: center;
+    margin: -16px auto 44px auto;
 }
 
 .backButton{
@@ -201,3 +298,5 @@ h6{
 .backButton:hover{
     background: #f1f1f1;
 }
+
+

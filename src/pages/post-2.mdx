@@ -6,4 +6,66 @@ isComplete: "true"
 subtitle: "Senior Product Designer, Omio 2019"
 gradient: "linear-gradient(180deg, #BFD3EB 0%, #5E90CC 100%)"
 featuredImage: "omio-tcp-snapshot.png"
+images: [omio-tcp-1.png, omio-tcp-2.png, omio-tcp-3.png]
 ---
+
+At Omio, we sell tickets for buses, trains, flights and recently, ferries too. Every transport mode has a different mental model with which travellers approach buying these tickets. And every vendor sells tickets differently for their respective transport mode. At Omio, we try to fix these problems by offering our users a consistent ticket buying experience whether it be a bus, train or flight.
+
+###### The problem
+Omio works with different travel providers, each provider has a very different and complex fare and class system. All these fares and classes may be inter dependant on each other. (For example, a refundable fare might only be available in 1st class). All of this makes it extremely confusing for the user. The user’s needs are not being met. Omio’s conversion for fare upgrades was *almost 50% lower* than other products on the market
+
+###### What the design looked like before
+In an earlier iteration of Omio, the class and fare options were hidden behind a button. This lead to a few problems,
+- For the user, they didn’t know what their options were, as the button was easy to miss.
+- Even when the user would tap the button to see all the options, they would be confusing
+- For the transport company, our class and fare upgrade conversions were much lower than the industry standard.
+
+<div className = "blog-content-image-container">
+<img src={props.images[0].publicURL} className="blog-content-image" />
+</div>
+<p className="image-caption">Everything is hidden behind the 'Change class and fare' button</p>
+
+<div className = "blog-content-image-container">
+<img src={props.images[1].publicURL} className="blog-content-image" />
+</div>
+<p className="image-caption">All the fares are just listed out without an easy way to distinguish between them</p>
+
+#### Exploring possible solutions 🔮
+I came up with a few hypotheses,
+- The user doesn't need to see all the options at the same time
+- We need a consistent naming system that clearly categorises the classes and fares of multiple transport options into a few broad categories such as flexibility and comfort
+
+Based on these assumptions, I started exploring some options that showed the class and fare options more up front.
+ 
+<div className = "blog-content-image-container">
+<img src={props.images[2].publicURL} className="blog-content-image" style="max-width: 100%; max-height: 580px;" />
+</div>
+<p className="image-caption">Making the class and fare options visible at a glance </p>
+
+<div className = "blog-content-image-container">
+<video className="blog-content-video" id="video-annualpowerlessamericanavocet" alt="AccordionBCP GIF" height="480px" autoplay playsinline preload="auto" poster="https://thumbs.gfycat.com/AnnualPowerlessAmericanavocet-mobile.jpg" tabindex="-1" muted loop>
+	<source src="https://giant.gfycat.com/AnnualPowerlessAmericanavocet.mp4" type="video/mp4" />
+	<source src="https://thumbs.gfycat.com/AnnualPowerlessAmericanavocet-mobile.mp4" type="video/mp4" />
+</video>
+</div>
+<p className="image-caption">An early prototype of my proposed solution</p>
+
+In my proposed solution, I decided to balance the number of choices the user has versus the number of choices visible on the screen at a glance. By using clear principles of the right amount of information being there for you right when you need it. 
+
+#### What was shipped 🚀
+<div className = "blog-content-image-container">
+<video className="blog-content-video" id="video-consideratequarrelsomegreendarnerdragonfly" alt="Shipped Mobile" height="600px" autoplay playsinline preload="auto" poster="https://thumbs.gfycat.com/ConsiderateQuarrelsomeGreendarnerdragonfly-mobile.jpg"  tabindex="-1" muted loop> 
+<source src="https://giant.gfycat.com/ConsiderateQuarrelsomeGreendarnerdragonfly.mp4" type="video/mp4"/>
+<source src="https://thumbs.gfycat.com/ConsiderateQuarrelsomeGreendarnerdragonfly-mobile.mp4" type="video/mp4"/>
+</video>
+</div>
+
+<video className="blog-content-video" id="video-insignificantdistantaffenpinscher" alt="Shipped Desktop" width="100%" autoplay playsinline preload="auto" poster="https://thumbs.gfycat.com/InsignificantDistantAffenpinscher-mobile.jpg"  tabindex="-1" muted loop>
+<source src="https://giant.gfycat.com/InsignificantDistantAffenpinscher.mp4" type="video/mp4" />
+<source src="https://thumbs.gfycat.com/InsignificantDistantAffenpinscher-mobile.mp4" type="video/mp4" />
+</video>
+
+#### Impact 🍪
+A few months after this had been shipped and significant data had been collected, I was happy to see that we had a **15%⬆️** increase in class and fare upgrades!
+
+

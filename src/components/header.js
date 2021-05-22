@@ -8,6 +8,7 @@ export default function Header() {
             <div className = {styles.introText}>Hi!<span className = {styles.emoji}>👋</span><br/>
             I'm Abheyraj, <br/>a product designer who knows how to code.
             </div>
+            <p>Scroll right to see some of my work 👉</p>
     </div>
   ) 
 }
