@@ -1,0 +1,66 @@
+.cardSizing{
+	height: 100%;
+	width: 30vw;
+	min-width: 400px;
+}
+
+.bwCard{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+	border-radius: 16px;
+	padding: 24px;
+	box-sizing: border-box;
+	margin: 0 0 0 24px;
+}
+
+.bwCard h1{
+	font-size: 32px;
+	font-family: 'Libre Baskerville';
+	font-weight: 700;
+	line-height: 120%;
+	color: black;
+	margin-top: 24px;
+	text-align: center;
+}
+
+.bwCard p{
+	font-size: 18px;
+	font-family: 'Libre Baskerville';
+	font-weight: normal;
+	line-height: 140%;
+	color: black;
+	margin-top: 24px;
+	text-align: center;
+}
+
+.bwCard a{
+	color: #78789B;
+}
+
+.noBorder{
+	border: none;
+}
+
+@media (max-width: 767px) { 
+	
+	.bwCard{
+		margin: 0 0 0 16px;
+	}
+	
+	.cardSizing{
+		width: 85vw;
+		min-width: 250px;
+	}	
+	
+	.bwCard h1{
+		font-size: 24px;
+	}
+	
+	.bwCard p{
+		font-size: 16px;
+		margin-top: 16px;
+	}
+}

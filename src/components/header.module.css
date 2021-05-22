@@ -68,9 +68,21 @@
 @media (max-width: 767px) { 
   
   .intro{
-      height: 100%;
-      width: 85vw;
-      min-width: 250px;
+    height: 100%;
+    width: 85vw;
+    min-width: 250px;
+  }
+  
+  .introText{
+    font-size: 24px;
+  }
+  
+  .intro p{
+    font-size: 16px;
+  }
+  
+  .emoji{
+    font-size: 32px;
   }
   
 }

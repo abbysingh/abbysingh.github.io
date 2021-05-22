@@ -51,14 +51,6 @@ section {
     position: relative;
 }
 
-.container{
-    height:100vh;
-    display: inline-flex;
-    align-content: center;
-    overflow-x: auto;
-    padding: 24px;
-    box-sizing: border-box;
-}
 
 h2{
     font-size: 32px;
@@ -235,6 +227,9 @@ h6{
 
 .blog-post-content ul{
     list-style-type: none;
+    margin-left: 0;
+    margin-block-start: 0;
+    padding:0;
 }
 
 .blog-post-content li{
@@ -271,8 +266,7 @@ h6{
 
 .image-caption{
     font-size: 14px !important;
-    color: #000000;
-    opacity: 0.75;
+    color: #78789B;
     text-align: center;
     margin: -16px auto 44px auto;
 }
