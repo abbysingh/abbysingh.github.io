@@ -44,6 +44,12 @@
 	border: none;
 }
 
+@media (max-width: 359px) {
+	.bwCard h1{
+		font-size: 20px;
+	}
+}
+
 @media (max-width: 767px) { 
 	
 	.bwCard{

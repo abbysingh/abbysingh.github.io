@@ -10,7 +10,7 @@
 @media (max-width: 767px) { 
 	  
 	.container{
-		height:calc(100vh - 120px);
+		height:calc(100vh - 112px);
 		padding: 16px;
 	}
 	  

@@ -44,6 +44,7 @@ export default function Home({data: {
   .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
   .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
   
+  
   return(
     <Container>
       <Header/>
@@ -52,7 +53,7 @@ export default function Home({data: {
       <h1>Additionally,</h1>
       <p>Since 2020, I've been mentoring budding product designers at the <a href="https://www.10kdesigners.com" target="_blank" rel="noopener noreferrer">10k Designers Masterclass</a></p>
       <p>In 2017, I worked at <a href="https://lazyeight.in" target="_blank" rel="noopener noreferrer">lazyeight.in</a></p>
-      <p>In 2015, I designed and developed a prototype app in both iOS and Android for housing.com. Take a <a href="https://gfycat.com/kindopendegu" target="_blank" rel="noopener noreferrer">peek here</a></p>
+      <p>In 2015, I designed and developed a neighbourhood app prototype for both iOS and Android for housing.com. Take a <a href="https://gfycat.com/kindopendegu" target="_blank" rel="noopener noreferrer">peek here</a></p>
       <p>In 2014, I was one of the initial iOS developers for <a href="https://apps.apple.com/in/app/wynk-music-songs-podcasts/id845083955" target="_blank" rel="noopener noreferrer">Wynk Music</a>, helping it scale from zero to one million users</p>
       </BWCard>
       <BWCard>
