@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 import Header from "../components/header";
 import PostLink from "../components/post-link";
 import Container from "../components/container";
@@ -44,6 +45,40 @@ export default function Home({
 
   return (
     <Container>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Abheyraj Singh</title>
+        <meta name="title" content="Abheyraj Singh" />
+        <meta
+          name="description"
+          content="Hi, I'm Abheyraj, a product designer who knows how to code."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="Abheyraj Singh" />
+        <meta
+          property="og:description"
+          content="Hi, I'm Abheyraj, a product designer who knows how to code."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dzrqeyspq/image/upload/v1621934279/socialimage_cawhqz.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="Abheyraj Singh" />
+        <meta
+          property="twitter:description"
+          content="Hi, I'm Abheyraj, a product designer who knows how to code."
+        />
+        <meta
+          property="twitter:image"
+          content="https://res.cloudinary.com/dzrqeyspq/image/upload/v1621934279/socialimage_cawhqz.png"
+        />
+        <link rel="canonical" href="https://abheyraj.com" />
+      </Helmet>
       <Header />
       {Posts}
       <BWCard>
