@@ -1,12 +1,16 @@
-import React from "react"
-import * as styles from "./bwcard.module.css"
+import React from "react";
+import * as styles from "./bwcard.module.css";
 
 export default function BWCard({ noBorder, children }) {
   var styleClasses = [styles.cardSizing, styles.bwCard];
-  var styleClassesWithoutBorder = [styles.cardSizing, styles.bwCard, styles.noBorder];
+  var styleClassesWithoutBorder = [
+    styles.cardSizing,
+    styles.bwCard,
+    styles.noBorder,
+  ];
   var computedStyle = styleClasses;
-  if(noBorder){
-    computedStyle = styleClassesWithoutBorder
+  if (noBorder) {
+    computedStyle = styleClassesWithoutBorder;
   }
-  return <div className={computedStyle.join(' ')}>{children}</div>
+  return <div className={computedStyle.join(" ")}>{children}</div>;
 }
