@@ -90,7 +90,7 @@ export default function Home({
             target="_blank"
             rel="noopener noreferrer"
           >
-            10k Designers Masterclass
+            10k Designers Masterclass.
           </a>
         </p>
         <p>
