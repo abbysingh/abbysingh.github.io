@@ -10,6 +10,10 @@ export default function PostLink({ post }) {
   } else {
     readMore = "COMING SOON";
   }
+  var cardStyles = [styles.work, styles.cardSizing, styles.clickable];
+  if (post.frontmatter.isComplete != "true") {
+    cardStyles = [styles.work, styles.cardSizing];
+  }
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid;
   function openCard() {
     if (post.frontmatter.isComplete == "true") navigate(post.frontmatter.slug);
@@ -17,7 +21,7 @@ export default function PostLink({ post }) {
   return (
     <div
       style={{ background: post.frontmatter.gradient }}
-      className={[styles.work, styles.cardSizing].join(" ")}
+      className={cardStyles.join(" ")}
       onClick={() => openCard()}
     >
       <Img
