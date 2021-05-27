@@ -16,13 +16,14 @@ export default function Template({
       style={{ background: frontmatter.gradient }}
     >
       <Link className="backButton" to="/">
-        <img src={"/backbutton.svg"} />
+        <img src={"/backbutton.svg"} alt="back icon" />
       </Link>
       <div className="blog-post-container">
         <div className="blog-post-header">
           <Img
             fluid={featuredImgFluid}
             className="blog-post-header-image"
+            alt="header image"
             imgStyle={{ objectFit: "contain" }}
           />
           <div className="blog-post-header-text-container">

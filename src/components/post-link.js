@@ -23,6 +23,7 @@ export default function PostLink({ post }) {
       <Img
         fluid={featuredImgFluid}
         className="featuredImage"
+        alt="project featured image"
         imgStyle={{ objectFit: "contain" }}
       />
       <h3 className={styles.previewTitle}>{post.frontmatter.title}</h3>
