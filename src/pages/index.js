@@ -150,6 +150,19 @@ export default function Home({
           </a>
         </p>
       </BWCard>
+      <BWCard>
+        <h1>🎸🎹</h1>
+        <p>
+          In my free time, I'm a hobbyist musician. Come see me make music on my{" "}
+          <a
+            href="https://www.youtube.com/channel/UCMxSAZnmI_U1xV438t_j2BA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube
+          </a>
+        </p>
+      </BWCard>
       <BWCard noBorder>
         <h1>✌🏽</h1>
         <p>Thanks for reading.</p>

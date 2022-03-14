@@ -1,29 +1,29 @@
-.intro{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    border: 1px solid black;
-    border-radius: 16px;
-    width: 30vw;
-    min-width: 400px;
-    padding: 24px;
-    box-sizing: border-box;
+.intro {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 16px;
+  width: 30vw;
+  min-width: 400px;
+  padding: 24px;
+  box-sizing: border-box;
 }
 
-.introPhoto{
-    width: 200px;
-    height: 200px;
-    background: url('../../img/Avatar.png');
-    border-radius: 100px;
-    background-size: contain;
-    flex-shrink: 0;
+.introPhoto {
+  width: 200px;
+  height: 200px;
+  background: url("../../img/Avatar.png");
+  border-radius: 100px;
+  background-size: contain;
+  flex-shrink: 0;
 }
 
-.introTextStack{
-    display:flex;
-    flex-direction: column;
+.introTextStack {
+  display: flex;
+  flex-direction: column;
 }
 
 .emoji {
@@ -35,9 +35,9 @@
   display: inline-block;
 }
 
-.intro p{
+.intro p {
   font-size: 18px;
-  font-family: 'Libre Baskerville';
+  font-family: "Libre Baskerville";
   font-weight: normal;
   line-height: 140%;
   color: black;
@@ -46,49 +46,65 @@
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate(  0.0deg); }
-   10% { transform: rotate(-12.0deg); }
-   20% { transform: rotate( 12.0deg); }
-   30% { transform: rotate(-8.0deg); }
-   40% { transform: rotate(  8.0deg); }
-   50% { transform: rotate(  0.0deg); }
-  100% { transform: rotate(  0.0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-12deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-.introText{
-    font-size: 32px;
-    font-family: 'Libre Baskerville';
-    font-weight: 700;
-    line-height: 120%;
-    color: black;
-    margin-top: 24px;
-    text-align: center;
+.introText {
+  font-size: 32px;
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  line-height: 120%;
+  color: black;
+  margin-top: 24px;
+  text-align: center;
+}
+
+a {
+  color: #575772;
 }
 
 @media (max-width: 359px) {
-  .introText{
+  .introText {
     font-size: 20px;
   }
 }
 
-@media (max-width: 767px) { 
-  
-  .intro{
+@media (max-width: 767px) {
+  .intro {
     height: 100%;
     width: 85vw;
     min-width: 250px;
   }
-  
-  .introText{
+
+  .introText {
     font-size: 24px;
   }
-  
-  .intro p{
+
+  .intro p {
     font-size: 16px;
   }
-  
-  .emoji{
+
+  .emoji {
     font-size: 32px;
   }
-  
 }
